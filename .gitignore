@@ -1,0 +1,12 @@
+App2/App2/App2.Android/obj/*
+App2/App2/App2.Android/bin/*
+App2/App2/App2/obj/*
+App2/App2/App2/bin/*
+Cx_Android/.vs
+Cx_Android/Cx_Android/obj/*
+Cx_Android/Cx_Android/bin/*
+*.aar
+.vs
+*.dll
+*.dll.mdb
+*.cache

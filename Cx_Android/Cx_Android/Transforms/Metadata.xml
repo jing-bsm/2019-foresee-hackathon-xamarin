@@ -1,0 +1,68 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  <!--<remove-node path="/api/package[@name='com.foresee.sdk.common']" />-->
+  <!--<attr path="/api/package[@name='Com.Foresee.Sdk.Common.Configuration']/class[@name='Configuration']/method[@name='AddCpp' and count(parameter)=2]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr> -->
+  <!--<attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='Configuration']/method[@name='addCpp' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.Integer']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>-->
+
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='Configuration']/method[@name='addCpp' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.Integer']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='Configuration']/method[@name='addCpp' and count(parameter)=3 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.Integer'] and parameter[3][@type='boolean']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='Configuration']/method[@name='addCpp' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='Configuration']/method[@name='addCpp' and count(parameter)=3 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='boolean']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='Configuration']/method[@name='addMeasure' and count(parameter)=1 and parameter[1][@type='com.foresee.sdk.common.configuration.MeasureConfigurationInternal']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='Configuration']/method[@name='addQueryStringParam' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='Configuration']/method[@name='addWhiteListedHost' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='Configuration']/method[@name='appendCPPValue' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.Integer']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='Configuration']/method[@name='appendCPPValue' and count(parameter)=3 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.Integer'] and parameter[3][@type='boolean']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='Configuration']/method[@name='appendCPPValue' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='Configuration']/method[@name='appendCPPValue' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='Configuration']/method[@name='appendCPPValue' and count(parameter)=3 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='boolean']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='Configuration']/method[@name='clearCpps' and count(parameter)=0]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='Configuration']/method[@name='clearMeasures' and count(parameter)=0]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='Configuration']/method[@name='removeCpp' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='Configuration']/method[@name='removeQueryStringParam' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='Configuration']/method[@name='repeatAfterDecline' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='Configuration']/method[@name='setCPPValueFromArray' and count(parameter)=3 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String[]'] and parameter[3][@type='boolean']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='Configuration']/method[@name='setLocalNotificationDelay' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='Configuration']/method[@name='withCustomLogo' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='Configuration']/method[@name='withNotificationIcon' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='Configuration']/method[@name='withOnExitExpiryDays' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='Configuration']/method[@name='shouldRepeatSurveyAfterDays' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='ConfigurationStub']/method[@name='addMeasure' and count(parameter)=1 and parameter[1][@type='com.foresee.sdk.common.configuration.MeasureConfigurationInternal']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='ConfigurationStub']/method[@name='addWhiteListedHost' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='ConfigurationStub']/method[@name='clearMeasures' and count(parameter)=0]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='ConfigurationStub']/method[@name='repeatAfterDecline' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='ConfigurationStub']/method[@name='setLocalNotificationDelay' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='ConfigurationStub']/method[@name='shouldRepeatSurveyAfterDays' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='ConfigurationStub']/method[@name='withCustomLogo' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='ConfigurationStub']/method[@name='withNotificationIcon' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+  <attr path="/api/package[@name='com.foresee.sdk.common.configuration']/class[@name='ConfigurationStub']/method[@name='withOnExitExpiryDays' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">Com.Foresee.Sdk.Common.Configuration.IConfiguration</attr>
+
+  <add-node path="/api/package[@name='com.foresee.sdk.common.network']">
+    <class abstract="false" deprecated="not deprecated" final="false" name="AsyncHttpRequest" static="true" visibility="public" extends="java.lang.Object"></class>
+  </add-node>
+  <add-node path="/api/package[@name='com.foresee.sdk.cxMeasure.tracker.tasks']">
+    <class abstract="false" deprecated="not deprecated" final="false" name="BatchHttpGetAsyncTask" static="true" visibility="public" extends="java.lang.Object"></class>
+  </add-node>
+  <add-node path="/api/package[@name='com.foresee.sdk.cxMeasure.tracker']">
+    <class abstract="false" deprecated="not deprecated" final="false" name="Tracker" static="true" visibility="public" extends="java.lang.Object"></class>
+  </add-node>
+  <add-node path="/api/package[@name='com.foresee.sdk.common.eventLogging.model']">
+    <class abstract="false" deprecated="not deprecated" final="false" name="Event" static="true" visibility="public" extends="java.lang.Object"></class>
+  </add-node>
+  <add-node path="/api/package[@name='com.foresee.sdk.common.eventLogging.model']">
+    <class abstract="false" deprecated="not deprecated" final="false" name="Event" static="true" visibility="public" extends="java.lang.Object"></class>
+    <class abstract="false" deprecated="not deprecated" final="false" name="FeatureEvent" static="true" visibility="public" extends="java.lang.Object"></class>
+  </add-node>
+
+  <!--     -->
+  <!--<remove-node path="/api/package[@name='com.foresee.sdk.cxMeasure.tracker']/class[@name='Tracker']" />-->
+</metadata>

@@ -1,0 +1,57 @@
+{
+  "clientId": "Ij6P1lfZHchO/co10lQ4BQ==",
+  "repeatDaysAfterDecline": 5,
+  "repeatDaysAfterComplete": 5,
+  "repeatDaysAfterAccept": 3,
+  "notificationType": "IN_SESSION",
+  "supportsReinvitation": true,
+  "sessionReplayEnabled": true,
+  "whitelistedHosts": [
+    "www.google.com",
+    "www.hotmail.com"
+  ],
+  "measures": [
+    {
+      "surveyId": "app_test_1",
+      "daysSinceLaunch": 4,
+      "launchCount": 5,
+
+      "significantEventThresholds": {
+        "app_test_1": 4
+      },
+      "combinedCriteria": [
+        {
+          "daysSinceLaunch": 5,
+          "launchCount": 2
+        },
+        {
+          "pageViews": 8
+        }
+      ]
+    },
+    {
+      "surveyId": "app_test_2",
+      "launchCount": 99,
+      "significantEventThresholds": {
+        "app_test_2": 4
+      }
+    }
+  ],
+  "invite": {
+    "logo": "logo",
+    "header": "masthead",
+    "baseColor": [77, 141, 99, 255]
+  },
+  "cppParameters": {
+    "MyCPP": 0,
+    "AnotherCPP": "hello",
+    "locale": "en"
+  },
+  "notificationLayout": "notification_custom",
+  "notificationIcon": "custom_logo",
+  "customLogoName": "logo",
+  "debugLoggingEnabled": true,
+  "replayStorage": {
+    "replayStorageLimitAsPercentageOfTotalSpace":10
+  }
+}

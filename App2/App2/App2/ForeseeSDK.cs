@@ -4,10 +4,8 @@ using System.Text;
 
 namespace App2
 {
-    public interface IT4CService
+    public interface ForeseeSDK
     {
-        String getTime();
-        String getString(Object obj);
         void start();
         void increamentWithKey(String key);
         void reset();

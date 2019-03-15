@@ -20,34 +20,20 @@ namespace App2
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            //Console.WriteLine("WTF" + DependencyService.Get<IT4CService>().getTime() + "\n");
-            //Console.WriteLine("==============================");
-            //Console.WriteLine(DependencyService.Get<IT4CService>().getString(new Person("joe",count)));
-
-            Console.WriteLine("==============================");
             lCount.Text = "#" + ++count;
-
-            //DependencyService.Get<IT4CService>().showInviteForSurveyId("app_test_1");
-            DependencyService.Get<IT4CService>().increamentWithKey("app_test_1");
-            DependencyService.Get<IT4CService>().checkIfEligible();
+            DependencyService.Get<ForeseeSDK>().increamentWithKey("app_test_1");
         }
 
-        private void Button_Rest(object sender, EventArgs e)
+        private void Button_Reset(object sender, EventArgs e)
         {
             count = 0;
             lCount.Text = "#" + count;
-            DependencyService.Get<IT4CService>().reset();
+            DependencyService.Get<ForeseeSDK>().reset();
         }
 
-        class Person
+        private void Button_Check(object sender, EventArgs e)
         {
-            String name;
-            int age;
-            public Person(String name, int age)
-            {
-                this.name = name;
-                this.age = age;
-            }
+            DependencyService.Get<ForeseeSDK>().checkIfEligible();
         }
     }
 }

@@ -11,14 +11,11 @@ namespace App2
         {
             InitializeComponent();
             MainPage = new NavigationPage(new MainPage());
-            DependencyService.Get<IT4CService>().start();
-            //            MainPage = new MainPage();
         }
 
         protected override void OnStart()
         {
-            Console.WriteLine("***********************************");
-            // Handle when your app starts
+            DependencyService.Get<ForeseeSDK>().start();
         }
 
         protected override void OnSleep()
@@ -28,6 +25,8 @@ namespace App2
 
         protected override void OnResume()
         {
+            DependencyService.Get<ForeseeSDK>().checkIfEligible();
+            DependencyService.Get<ForeseeSDK>().increamentWithKey("app_test_1");
             // Handle when your app resumes
         }
     }

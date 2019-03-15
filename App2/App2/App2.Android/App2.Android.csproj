@@ -64,7 +64,7 @@
     <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="27.0.2.1" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IT4CService_Android.cs" />
+    <Compile Include="ForeseeSDK_Android.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,7 +72,9 @@
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
-    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
     <AndroidResource Include="Resources\raw\foresee_configuration.json" />
   </ItemGroup>
   <ItemGroup>

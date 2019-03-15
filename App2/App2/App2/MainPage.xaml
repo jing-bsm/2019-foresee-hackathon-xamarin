@@ -7,7 +7,8 @@
     <StackLayout Margin="10,10,10,0" HorizontalOptions="Center">
         <Label x:Name="lCount" Text="0"/>
         <Button  Clicked="Button_Clicked" Text="Incrase" />
-        <Button  Clicked="Button_Rest" Text="Rest" />
+        <Button  Clicked="Button_Reset" Text="Reset" />
+        <Button  Clicked="Button_Check" Text="Check Eligibility" />
 
     </StackLayout>
 

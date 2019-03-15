@@ -14,12 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="HelloXamlPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="App.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>

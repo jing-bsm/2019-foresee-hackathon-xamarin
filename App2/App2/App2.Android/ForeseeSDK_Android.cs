@@ -14,23 +14,11 @@ using Google.Gson;
 using Java.Util;
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(App2.Droid.IT4CService_Android))]
+[assembly: Dependency(typeof(App2.Droid.ForeseeSDK_Android))]
 namespace App2.Droid
 {
-    class IT4CService_Android : Java.Lang.Object, IT4CService
+    class ForeseeSDK_Android : Java.Lang.Object, ForeseeSDK
     {
-        public string getString(object obj)
-        {
-            Gson gson = new Gson();
-            String li = gson.ToJson(new Java.Util.AbstractMap.SimpleEntry("w", "l"));
-            return li + "\t" + obj + "\t";
-        }
-
-        public string getTime()
-        {
-            return "yo\t" + Java.Lang.JavaSystem.CurrentTimeMillis();
-        }
-
         public void increamentWithKey(string key)
         {
             ForeSee.IncrementSignificantEventCountWithKey(key);
@@ -40,25 +28,25 @@ namespace App2.Droid
         {
             ForeSee.ResetState();
         }
+
         public void checkIfEligible()
         {
             ForeSee.CheckIfEligibleForSurvey();
         }
-
 
         public void start()
         {
             ForeSee.Start((Android.App.Application)Android.App.Application.Context);
         }
 
-        public void enableLogs()
-        {
-            //ForeSee.setDebugLogEnabled(true);
-        }
-
         public void showInviteForSurveyId(string key)
         {
             ForeSee.ShowInviteForSurveyID(key);
+        }
+
+        public void enableLogs()
+        {
+            //ForeSee.setDebugLogEnabled(true);
         }
     }
 }
